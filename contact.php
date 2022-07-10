@@ -13,10 +13,12 @@
     <?php
     include "./navbar.php";
     ?>
+    <div class=container>
 
 
     <h1> ติดต่อเรา </h1>
     <a href="./contact.php"> ติดต่อเรา <a>
 
+    </div>
 </body>
 </html>

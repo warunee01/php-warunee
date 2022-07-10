@@ -13,9 +13,12 @@
     <?php
     include "./navbar.php";
     ?>
+<div class="container">
 
 
     <h1> เกี่ยวกับเรา </h1>
+</div>
+
     <a href="./index.php"> Home <a>
 
 </body>

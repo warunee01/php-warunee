@@ -16,7 +16,7 @@
     include "./navbar.php";
     ?>
     <div class="container">
-        <div class="row">
+        <div class="row justify-conten-center">
             <div class="col-md-4">
                 <h1> เข้าสู่ระบบ </h1>
                 <form action="check.php" method="POST">

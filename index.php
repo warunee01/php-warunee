@@ -12,6 +12,10 @@
 <body>
     <?php
     include "./navbar.php";
+    ?>
+    <div class="container">
+    <?php
+    
     echo "ยินดีต้อนรับเข้าสู่เว็บไซด์"; 
     echo "<h1> Welcome to website </h1>";
     $year = 2565;
@@ -34,7 +38,7 @@
 
 
     ?>
-
+    </div>
 
 
 </body>
