@@ -8,6 +8,7 @@
 <div class="container">
     <table class="table">
         <tr>
+            <th>ไฟล์</th>
            <th> Username </th>
            <th> Password </th>
            <th> ชื่อ </th>
@@ -20,14 +21,19 @@
     while($row = mysqli_fetch_assoc($result)){
 ?>
         <tr>
+            <td> <img src="./images/<?php echo $row['filename']; ?>" class="img-fluid" style="max-width:200px"/> </td>
             <td><?php echo "$row[username]"; ?></td>
             <td><?php echo "$row[password]"; ?></td>
-            <td><?php echo "$row[firstname]"; ?></td>
+            <td>
+                <?php 
+                   echo "<a href='users_detail.php?id=$row[id]'> $row[firstname] </a>"; 
+                ?>
+            </td>
             <td><?php echo "$row[lastname]"; ?></td>
             <td><?php echo "$row[email]"; ?></td>
             <td><?php echo "$row[address]"; ?></td>
             <td>
-                <a href="users_delete.php?id=<?php echo $row['id']; ?>" class="btn btn-danger"> Delete </a>
+            <a href="users_delete.php?id=<?php echo $row['id']; ?>" class="btn btn-danger" onClick="javascript: return confirm('ยืนยันการลบ');"> Delete </a>
                 <a href="users_edit.php?id=<?php echo $row['id']; ?>" class="btn btn-info"> Edit </a>
             </td>
         </tr>

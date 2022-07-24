@@ -1,6 +1,7 @@
 <?php
   session_start();
 ?>
+<meta charset="UTF-8">
 
     <link rel="stylesheet" href="./css/bootstrap.css" />
     <script src="./js/popper.js"> </script>
@@ -56,6 +57,9 @@
             <?php
               }else{
             ?>
+                <li class="nav-item">
+                    <a class="nav-link" href="./users.php">แสดงสมาชิก</a>
+                </li>
                 <li class="nav-item">
                     <a class="nav-link" href="./register.php">สมัครสมาชิก</a>
                 </li>

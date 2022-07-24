@@ -19,7 +19,7 @@
         <div class="row justify-content-center">
             <div class="col-md-6">
                 <h1 class="text-center"> สมัครสมาชิก </h1>
-                <form action=" reg_insert.php" method="POST">
+                <form action=" reg_insert.php" method="POST" enctype="multipart/form-data">
                     username:
                     <input type="text" name="username" class="form-control" />
                     password:
@@ -32,6 +32,9 @@
                     <input type="text" name="email" class="form-control" />
                     ที่อยู่:
                     <textarea name="address" row="4" class="form-control"></textarea>
+                    แนบไฟล์รูปภาพ
+                    <input type="file" name="uploadfile" class="form-control"/>
+
                     <div class="pt-2 d-grid">
                         <input type="submit" values="บันทึกข้อมูล" class="btn btn-primary" />
                     </div>
